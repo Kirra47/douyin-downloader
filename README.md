@@ -17,13 +17,20 @@
 
 ### 方式一：OpenClaw Skill（推荐）
 
-如果你正在使用 OpenClaw，直接让 AI 助手安装：
+如果你正在使用 [OpenClaw](https://openclaw.ai)，只需对 AI 说：
 
 > "帮我安装 douyin-downloader skill"
 
-OpenClaw 会自动克隆仓库、安装依赖，之后发抖音链接就能直接下载。
+或者手动安装：
 
-### 方式二：手动安装
+```bash
+git clone https://github.com/Kirra47/douyin-downloader.git
+cp -r douyin-downloader/skill ~/.openclaw/skills/douyin-downloader
+```
+
+安装后，直接发抖音链接给 OpenClaw，它就会自动调用脚本下载无水印视频。
+
+### 方式二：独立安装
 
 ```bash
 git clone https://github.com/Kirra47/douyin-downloader.git
