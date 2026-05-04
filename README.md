@@ -15,6 +15,16 @@
 
 ## 📦 安装
 
+### 方式一：OpenClaw Skill（推荐）
+
+如果你正在使用 OpenClaw，直接让 AI 助手安装：
+
+> "帮我安装 douyin-downloader skill"
+
+OpenClaw 会自动克隆仓库、安装依赖，之后发抖音链接就能直接下载。
+
+### 方式二：手动安装
+
 ```bash
 git clone https://github.com/Kirra47/douyin-downloader.git
 cd douyin-downloader
