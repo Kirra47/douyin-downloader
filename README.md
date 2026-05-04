@@ -15,29 +15,35 @@
 
 ## 📦 安装
 
-### 方式一：OpenClaw Skill（推荐）
+### 方式一：喂给 OpenClaw 龙虾 🦞（推荐）
 
-如果你正在使用 [OpenClaw](https://openclaw.ai)，只需对 AI 说：
+直接复制下面这段话，发给你的 OpenClaw AI 助手：
 
-> "帮我安装 douyin-downloader skill"
+```
+请帮我安装抖音无水印下载器：
 
-或者手动安装：
+1. git clone https://github.com/Kirra47/douyin-downloader.git ~/.douyin-downloader
+2. cd ~/.douyin-downloader && pip install playwright requests && python3 -m playwright install chromium
+3. 将 skill/ 目录复制到 ~/.openclaw/skills/douyin-downloader/
+4. 运行 python3 douyin-dl.py --login，打开浏览器后告诉我，我来登录抖音
 
-```bash
-git clone https://github.com/Kirra47/douyin-downloader.git
-cp -r douyin-downloader/skill ~/.openclaw/skills/douyin-downloader
+安装完成后，以后我发抖音链接，你直接用 douyin-dl.py 下载，无需再问。
+下载完记得关掉视频页面，不要刷播放量。
 ```
 
-安装后，直接发抖音链接给 OpenClaw，它就会自动调用脚本下载无水印视频。
+AI 会自动完成安装、打开浏览器让你登录，之后发抖音链接就能直接下载无水印视频。
 
-### 方式二：独立安装
+### 方式二：手动安装
 
 ```bash
-git clone https://github.com/Kirra47/douyin-downloader.git
-cd douyin-downloader
+git clone https://github.com/Kirra47/douyin-downloader.git ~/.douyin-downloader
+cd ~/.douyin-downloader
+pip install playwright requests
+python3 -m playwright install chromium
+cp -r skill ~/.openclaw/skills/douyin-downloader
 
-pip install -r requirements.txt
-playwright install chromium
+# 登录抖音（仅首次）
+python3 douyin-dl.py --login
 ```
 
 ## 🚀 快速开始
