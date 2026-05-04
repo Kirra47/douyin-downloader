@@ -1,0 +1,25 @@
+# Douyin Downloader
+
+*.pyc
+__pycache__/
+.venv/
+venv/
+
+# 浏览器 profile（含用户登录 cookie，不要提交）
+.douyin-downloader/
+browser-profile/
+
+# 下载的视频
+Downloads/
+*.mp4
+*.mov
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
